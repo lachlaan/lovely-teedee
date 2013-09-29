@@ -32,7 +32,7 @@ end
 
 menu.keypressed = function(self, k, u)
 
-	current = k == 'up' and math.max(current-1, 1) or (k == 'down' and math.min(current+1, #self.options) or current)
+	self.current = k == 'up' and math.max(self.current-1, 1) or (k == 'down' and math.min(self.current+1, #self.options) or self.current)
 	
 	if k == 'return' then self.options[self.current].func() end
 	
