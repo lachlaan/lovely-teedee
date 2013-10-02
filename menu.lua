@@ -10,11 +10,12 @@ menu.options = {
 	{name = 'Quit', func = love.event.quit}}
 
 
+--[[
 menu.update = function(self, dt)
 
 	--maybe not even needed
 	
-end
+end--]] Guess what? not needed
 
 
 menu.draw = function(self)
